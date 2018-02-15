@@ -12,13 +12,14 @@ app.on('ready', function() {
   mainWindow = new BrowserWindow({
     width: 1280,
     height: 720,
-    title: 'Brain.fm',
-    webSecurity: false,
+    title: 'Instagram',
+    webSecurity: true,
     'node-integration': false,
   });
 
   mainWindow.setMenu(null);
-  mainWindow.loadURL('http://www1.brain.fm/app/player');
+  mainWindow.loadURL('https://instagram.com',{userAgent: 'Mozilla/5.0 (iPad; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1'});
+  mainWindow.user
   //mainWindow.webContents.openDevTools();
 
   mainWindow.on('app-command', function(e, cmd) {

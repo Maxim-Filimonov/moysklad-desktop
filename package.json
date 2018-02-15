@@ -1,16 +1,16 @@
 {
-  "name": "brainfm-desktop",
-  "version": "0.1.3",
-  "description": "brain.fm desktop client",
+  "name": "instagram-desktop",
+  "version": "0.1.0",
+  "description": "instagram desktop client",
   "main": "main.js",
   "scripts": {
     "start": "electron main.js",
-    "package": "electron-packager . brainfm --all --out=./out --overwrite --icon=./brainfm.ico",
-    "package:mac": "electron-packager . Brain.fm --mac --out=./out --overwrite --icon=./brainfm.ico"
+    "package": "electron-packager . instagram --all --out=./out --overwrite --icon=./instagram.ico",
+    "package:mac": "electron-packager . Instagram --mac --out=./out --overwrite --icon=./instagram.ico"
   },
   "author": "Dinius",
   "license": "MIT",
-  "homepage": "https://brain.fm",
+  "homepage": "https://instagram.com",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/atom/electron-quick-start.git"
