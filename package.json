@@ -5,10 +5,12 @@
   "main": "main.js",
   "scripts": {
     "start": "electron main.js",
-    "package": "electron-packager . instagram --all --out=./out --overwrite --icon=./instagram.ico",
-    "package:mac": "electron-packager . Instagram --mac --out=./out --overwrite --icon=./instagram.ico"
+    "package":
+      "electron-packager . instagram --all --out=./out --overwrite --icon=./instagram.ico",
+    "package:mac":
+      "electron-packager . Instagram --mac --out=./out --overwrite --icon=./instagram.ico"
   },
-  "author": "Dinius",
+  "author": "Maxim Filimonov",
   "license": "MIT",
   "homepage": "https://instagram.com",
   "repository": {
