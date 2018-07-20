@@ -14,7 +14,7 @@
   "homepage": "http://moysklad.ru",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atom/electron-quick-start.git"
+    "url": "git+https://github.com/Maxim-Filimonov/moysklad-desktop.git"
   },
   "build": {
     "appId": "moysklad.ru",
