@@ -1,24 +1,24 @@
 {
-  "name": "instagram-desktop",
+  "name": "moysklad-desktop",
   "version": "0.1.0",
-  "description": "instagram desktop client",
+  "description": "moysklad desktop client",
   "main": "main.js",
   "scripts": {
     "start": "electron main.js",
-    "package":
-      "electron-packager . instagram --all --out=./out --overwrite --icon=./instagram.ico",
-    "package:mac":
-      "electron-packager . Instagram --mac --out=./out --overwrite --icon=./instagram.ico"
+    "package": "electron-packager . moysklad --all --out=./out --overwrite --icon=./moysklad.ico",
+    "package:win": "electron-packager . Moysklad --platform=win32 --out=./out --overwrite --icon=./moysklad.ico",
+    "package:mac": "electron-packager . MoySklad --mac --out=./out --overwrite --icon=./moysklad.ico"
   },
   "author": "Maxim Filimonov",
   "license": "MIT",
-  "homepage": "https://instagram.com",
+  "homepage": "http://moysklad.ru",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/atom/electron-quick-start.git"
   },
   "dependencies": {
-    "electron": "^1.8.2",
-    "electron-packager": "^11.0.1"
+    "electron": "^2.0.5",
+    "electron-packager": "^12.1.0",
+    "smalltalk": "^3.1.1"
   }
 }
