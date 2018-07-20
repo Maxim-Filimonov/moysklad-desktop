@@ -5,9 +5,9 @@
   "main": "main.js",
   "scripts": {
     "start": "electron main.js",
-    "package": "electron-packager . moysklad --all --out=./out --overwrite --icon=./moysklad.ico",
-    "package:win": "electron-packager . Moysklad --platform=win32 --out=./out --overwrite --icon=./moysklad.ico",
-    "package:mac": "electron-packager . MoySklad --mac --out=./out --overwrite --icon=./moysklad.ico"
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "release": "build"
   },
   "author": "Maxim Filimonov",
   "license": "MIT",
@@ -16,9 +16,17 @@
     "type": "git",
     "url": "git+https://github.com/atom/electron-quick-start.git"
   },
-  "dependencies": {
+  "build": {
+    "appId": "your.id",
+    "mac": {
+      "category": "your.app.category.type"
+    }
+  },
+  "devDependencies": {
     "electron": "^2.0.5",
-    "electron-packager": "^12.1.0",
+    "electron-builder": "^20.24.4"
+  },
+  "dependencies": {
     "smalltalk": "^3.1.1"
   }
 }
