@@ -17,9 +17,9 @@
     "url": "git+https://github.com/atom/electron-quick-start.git"
   },
   "build": {
-    "appId": "your.id",
+    "appId": "moysklad.ru",
     "mac": {
-      "category": "your.app.category.type"
+      "category": "business"
     }
   },
   "devDependencies": {
