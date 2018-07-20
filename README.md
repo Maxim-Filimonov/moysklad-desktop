@@ -1,10 +1,5 @@
-# Instagram fm-Desktop-Client
-https://instagram.com Desktop client
-
-Simple Electron app as a desktop client for Instagram
-
-Runs in a standalone window with override for user-agent to allow to upload photos from your desktop
-
-## Download
-
-You can download the latest binary for macOS [here](https://github.com/Maxim-Filimonov/Instagram-Desktop/releases/latest).
+# Приложение МойСклад
+Обертка для сайта http://moysklad.ru в виде отдельного приложения.
+Доработки по сравнению с сайтом:
+- Отдельное приложение - вместо одной из вкладок. 
+- Предупреждения о сохранении данных при попытке выйти из приложения.  
