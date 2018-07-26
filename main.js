@@ -6,6 +6,7 @@ const {
   dialog,
 } = require("electron");
 const { autoUpdater } = require("electron-updater");
+const path = require("path");
 
 let mainWindow;
 
@@ -21,6 +22,7 @@ app.on("ready", function() {
     width: 1280,
     webPreferences: {
       minimumFontSize: 18,
+      preload: path.join(__dirname, "customisations.js"),
     },
     height: 720,
     title: "Мой Склад",
