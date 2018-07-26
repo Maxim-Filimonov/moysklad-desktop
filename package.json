@@ -1,6 +1,6 @@
 {
   "name": "moysklad-desktop",
-  "version": "0.2.1",
+  "version": "0.3.1",
   "description": "moysklad desktop client",
   "main": "main.js",
   "scripts": {
