@@ -17,6 +17,9 @@ app.on("window-all-closed", function() {
 app.on("ready", function() {
   mainWindow = new BrowserWindow({
     width: 1280,
+    webPreferences: {
+      minimumFontSize: 18,
+    },
     height: 720,
     title: "Мой Склад",
     webSecurity: true,
@@ -75,7 +78,7 @@ app.on("ready", function() {
           label: "Выйти",
           accelerator: "CmdOrCtrl+Q",
           click: function() {
-                  app.quit();
+            app.quit();
           },
         },
       ],
