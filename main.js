@@ -5,6 +5,7 @@ const {
   Menu,
   dialog,
 } = require("electron");
+const { autoUpdater } = require("electron-updater");
 
 let mainWindow;
 
@@ -15,6 +16,7 @@ app.on("window-all-closed", function() {
 });
 
 app.on("ready", function() {
+  autoUpdater.checkForUpdatesAndNotify();
   mainWindow = new BrowserWindow({
     width: 1280,
     webPreferences: {
