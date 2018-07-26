@@ -20,6 +20,7 @@ app.on("ready", function() {
   autoUpdater.checkForUpdatesAndNotify();
   mainWindow = new BrowserWindow({
     width: 1280,
+    fullscreen: true,
     webPreferences: {
       minimumFontSize: 18,
       preload: path.join(__dirname, "customisations.js"),
