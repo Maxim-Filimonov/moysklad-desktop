@@ -1,6 +1,6 @@
 {
   "name": "moysklad-desktop",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "moysklad desktop client",
   "main": "main.js",
   "scripts": {
@@ -20,7 +20,10 @@
     "appId": "moysklad.ru",
     "mac": {
       "category": "business"
-    }
+    },
+    "files": [
+      "build/icon.*"
+    ]
   },
   "devDependencies": {
     "electron": "^2.0.5",
