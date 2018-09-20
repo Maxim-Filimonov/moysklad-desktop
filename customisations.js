@@ -30,6 +30,20 @@ const styles = `
     .topMenuItem-new:nth-child(16) {
       display: none;
     }
+    /* Удаление Упаковка */
+    .b-guide-editor > table:nth-child(5) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(2) > tr:nth-child(10), 
+    /* Удаление Алкогольная продукция */
+    .b-guide-editor > table:nth-child(5) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(2) > tr:nth-child(19),
+    /* Удаление Табачная продукция */
+    .column > tbody:nth-child(2) > tr:nth-child(23),
+    .column > tbody:nth-child(2) > tr:nth-child(24),
+    .column > tbody:nth-child(2) > tr:nth-child(25) {
+    display: none;
+    }
+    /* Удаление НДС */
+    .column > tbody:nth-child(2) > tr:nth-child(28) {
+      display: none;
+    }
   `;
 
 window.onload = function() {
