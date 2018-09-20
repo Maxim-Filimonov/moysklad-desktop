@@ -30,6 +30,7 @@ app.on("ready", function() {
     webSecurity: true,
     "node-integration": false,
   });
+  mainWindow.webContents.openDevTools();
 
   mainWindow.setMenu(null);
   mainWindow.loadURL("https://online.moysklad.ru/app/");
