@@ -100,7 +100,7 @@ function createNewButton(buttonText) {
   );
 }
 
-function getEndOfGoodForm() {
+function getEndOfParentForm() {
   return $(
     `${formTable} > tr:last-child`,
   );
@@ -116,7 +116,7 @@ function redirectTo(url) {
   window.location = url;
 }
 function createMovementOfGoodsButton() {
-  const form = getEndOfGoodForm();
+  const form = getEndOfParentForm();
   if (form) {
     const button = createNewButton("Движения по товару");
     button.addEventListener(
