@@ -8,6 +8,7 @@ function appendStyle(styles) {
 
   document.getElementsByTagName("head")[0].appendChild(css);
 }
+const formTable = '#site > table > tbody > tr:nth-child(3) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > div > div > table > tbody > tr:nth-child(2) > td > div > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:nth-child(2) > table > tbody ';
 const styles = `
     span.subMenuItem-new[title="Сер. номера"] {
       display: none;
@@ -31,10 +32,10 @@ const styles = `
       display: none;
     }
     /* Удаление Упаковка */
-    #site > table > tbody > tr:nth-child(3) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > div > div > table > tbody > tr:nth-child(2) > td > div > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(10) > td > table,
+    ${formTable} > tr:nth-child(10) > td > table,
     /* Удаление Алкогольная продукция */
-    #site > table > tbody > tr:nth-child(3) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > div > div > table > tbody > tr:nth-child(2) > td > div > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(19) > td > table > tbody > tr:nth-child(1) > td > div > div,
-    #site > table > tbody > tr:nth-child(3) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > div > div > table > tbody > tr:nth-child(2) > td > div > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(19) > td > table > tbody > tr:nth-child(4) > td > table > tbody > tr > td > table > tbody > tr > td > table > tbody > tr:nth-child(1),
+    ${formTable} > tr:nth-child(19) > td > table > tbody > tr:nth-child(1) > td > div > div,
+    ${formTable} > tr:nth-child(19) > td > table > tbody > tr:nth-child(4) > td > table > tbody > tr > td > table > tbody > tr > td > table > tbody > tr:nth-child(1),
     /* Удаление Табачная продукция */
     .column > tbody:nth-child(2) > tr:nth-child(23),
     .column > tbody:nth-child(2) > tr:nth-child(24),
@@ -42,7 +43,7 @@ const styles = `
     display: none;
     }
     /* Удаление НДС */
-    #site > table > tbody > tr:nth-child(3) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > div > div > table > tbody > tr:nth-child(2) > td > div > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:nth-child(1) > table > tbody > tr:nth-child(25) > td:nth-child(1) > div > span {
+    ${formTable} > tr:nth-child(25) > td:nth-child(1) > div > span {
       display: none;
     }
   `;
@@ -101,7 +102,7 @@ function createNewButton(buttonText) {
 
 function getEndOfGoodForm() {
   return $(
-    ".b-guide-editor > table:nth-child(5) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(2) > tr:last-child",
+    `${formTable} > tr:last-child`,
   );
 }
 function htmlToElement(html) {
