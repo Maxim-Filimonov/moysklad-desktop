@@ -31,9 +31,10 @@ const styles = `
       display: none;
     }
     /* Удаление Упаковка */
-    .b-guide-editor > table:nth-child(5) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(2) > tr:nth-child(10), 
+    #site > table > tbody > tr:nth-child(3) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > div > div > table > tbody > tr:nth-child(2) > td > div > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(10) > td > table,
     /* Удаление Алкогольная продукция */
-    .b-guide-editor > table:nth-child(5) > tbody:nth-child(1) > tr:nth-child(1) > td:nth-child(2) > table:nth-child(1) > tbody:nth-child(2) > tr:nth-child(19),
+    #site > table > tbody > tr:nth-child(3) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > div > div > table > tbody > tr:nth-child(2) > td > div > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(19) > td > table > tbody > tr:nth-child(1) > td > div > div,
+    #site > table > tbody > tr:nth-child(3) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > div > div > table > tbody > tr:nth-child(2) > td > div > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(19) > td > table > tbody > tr:nth-child(4) > td > table > tbody > tr > td > table > tbody > tr > td > table > tbody > tr:nth-child(1),
     /* Удаление Табачная продукция */
     .column > tbody:nth-child(2) > tr:nth-child(23),
     .column > tbody:nth-child(2) > tr:nth-child(24),
@@ -41,7 +42,7 @@ const styles = `
     display: none;
     }
     /* Удаление НДС */
-    .column > tbody:nth-child(2) > tr:nth-child(28) {
+    #site > table > tbody > tr:nth-child(3) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td > div > div > table > tbody > tr:nth-child(2) > td > div > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:nth-child(1) > table > tbody > tr:nth-child(25) > td:nth-child(1) > div > span {
       display: none;
     }
   `;
