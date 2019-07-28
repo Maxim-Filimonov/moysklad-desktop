@@ -27,11 +27,11 @@
     ]
   },
   "devDependencies": {
-    "electron": "^2.0.5",
-    "electron-builder": "^20.24.4"
+    "electron": "^5.0.8",
+    "electron-builder": "^21.1.5"
   },
   "dependencies": {
-    "electron-updater": "^3.0.3",
+    "electron-updater": "^4.1.2",
     "smalltalk": "^3.1.1"
   }
 }
