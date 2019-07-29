@@ -7,7 +7,7 @@
     "start": "electron main.js",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
-    "release": "electron-builder -p"
+    "release": "build"
   },
   "author": "Maxim Filimonov",
   "license": "MIT",
@@ -19,15 +19,7 @@
   "build": {
     "appId": "moysklad.ru",
     "mac": {
-      "category": "business",
-      "publish": [
-        "github"
-      ]
-    },
-    "win": {
-      "publish": [
-        "github"
-      ]
+      "category": "business"
     },
     "files": [
       "**/*",
